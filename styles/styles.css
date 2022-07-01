@@ -268,16 +268,16 @@ h4 {
   width: 60%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 30%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 30%;
-}
-
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 30%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 20%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .three {
+  width: 20%;
 }
 
 .stat-title {
@@ -618,6 +618,8 @@ h4 {
   }
 }
 
+/* Media queries - should add later in scss */
+
 @media screen and (max-width: 1432px) {
   .container {
     padding: 7rem 11rem;
@@ -655,8 +657,6 @@ h4 {
 .projects {
   grid-template-columns: repeat(1, 1fr);
 }
-
-/* Media 3 */
 
 @media screen and (max-width: 1070px) {
   .about-container {
