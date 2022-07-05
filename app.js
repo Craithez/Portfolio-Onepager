@@ -8,3 +8,10 @@
         })
     });
 })();
+
+/* 
+<a href="#area1">Zu Absatz 4</a>
+	…	…	…
+
+<div class="area" id="area1"> … … … </div>
+*/
