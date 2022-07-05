@@ -9,9 +9,16 @@
     });
 })();
 
-/* 
-<a href="#area1">Zu Absatz 4</a>
-	…	…	…
+let lastScroll = 0;
 
-<div class="area" id="area1"> … … … </div>
-*/
+window.addEventListener('scroll', function() {
+  // scroll down
+  if (lastScroll < window.pageYOffset) {
+    window.scrollBy(0, window.innerHeight);
+  }
+  // scroll up
+  else if (lastScroll > window.pageYOffset) {
+    window.scrollBy(0, window.innerHeight * -1);
+  }
+  lastScroll = window.pageYOffset;
+});
