@@ -8,6 +8,10 @@
         })
     });
 })();
+
+
+
+
 /*
 let lastScroll = 0;
 
@@ -21,4 +25,4 @@ window.addEventListener('scroll', function() {
     window.scrollBy(0, window.innerHeight * -1);
   }
   lastScroll = window.pageYOffset;
-});
+}); */

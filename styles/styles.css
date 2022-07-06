@@ -44,15 +44,13 @@ h1::after {
 
 h1::before {
   background: var(--color-primary);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
   width: 0.125em;
   background: var(--color-secondary);
-  animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
     blink 900ms steps(var(--typewriterCharacters)) infinite;
 }
 
@@ -62,13 +60,16 @@ h1::after {
   position: fixed;
   z-index: 10;
   top: 50%;
-  right: 3%;
+  right: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+
 }
+
+/* Navbar Icons */
 
 .navbar .control {
   padding: 1rem;
@@ -99,6 +100,7 @@ h1::after {
   color: var(--color-white);
 }
 
+
 /* Header content */
 .header-content {
   display: grid;
@@ -121,12 +123,8 @@ h1::after {
   left: 0;
   top: 0;
   z-index: 0;
-  clip-path: polygon(
-    0 0,
-    71% 0,
-    36% 100%,
-    0 100%
-  ); /* Geometry Object behind Picture */
+  clip-path: polygon(75% 0%, 84% 48%, 56% 86%, 0% 100%, 0 52%, 0% 0%);
+  /* Geometry Object behind Picture */
 }
 
 .header-content .left-header .image {
@@ -154,7 +152,7 @@ h1::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
+  padding-right: 1rem;
 }
 
 .header-content .right-header .name {
@@ -493,8 +491,6 @@ h4 {
   justify-content: flex-start;
 }
 
-/* Buttons */
-
 .main-title {
   text-align: center;
 }
@@ -508,6 +504,18 @@ h4 {
 
 .main-title h2 span {
   color: var(--color-secondary);
+}
+
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-black-1);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
 }
 
 .about-container .about p {
@@ -531,7 +539,7 @@ h4 {
   .right-header {
     grid-row: 1;
     padding-right: 0rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -551,9 +559,9 @@ h4 {
     bottom: 0;
     flex-direction: row;
     justify-content: center;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 80%;
     background-color: var(--color-grey-5);
   }
 
@@ -651,7 +659,7 @@ h4 {
 }
 
 .header-content .right-header {
-  padding-right: 9rem;
+  padding-right: 1rem;
 }
 
 .projects {
@@ -698,7 +706,7 @@ h4 {
   .right-header {
     grid-row: 1;
     padding-right: 0rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -727,8 +735,23 @@ h4 {
   }
 
 }
-/
-/* Scrolling 
+
+/* Scrolling */
+
+html {
+  scroll-behavior: smooth
+}
+
+.control {
+  scroll-snap-type: mandatory;
+}
+
+section {
+  position: relative;
+  scroll-snap-align: start;
+}
+
+/*
 html, body, section , .main-content {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
@@ -739,8 +762,7 @@ section {
   position: relative;
   scroll-snap-align: start;
 }
-*/
-/* 
+
 h1,
 h2,
 h4 {
@@ -807,7 +829,7 @@ section {
 
 .container {
   display: block;
-  width: 70%;
+  width: 80%;
   /* transform: translateY(-100%) scale(0); */
   /* transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;*/
   background-color: var(--color-primary);
@@ -818,8 +840,9 @@ section {
   animation: appear 1s ease-in-out;
   transform: translateY(0) scaleY(1);
 }
-*/
-.main-content {
+
+*/ .main-content {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  width: 80%;
 }
