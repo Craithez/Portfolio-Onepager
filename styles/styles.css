@@ -727,8 +727,8 @@ h4 {
   }
 
 }
-
-/* Scrolling */
+/
+/* Scrolling 
 html, body, section , .main-content {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
@@ -739,6 +739,7 @@ section {
   position: relative;
   scroll-snap-align: start;
 }
+*/
 /* 
 h1,
 h2,
@@ -795,22 +796,20 @@ header {
   color: var(--color-white);
   overflow: hidden;
   padding: 0 !important;
-
 }
 
 section {
   min-height: 100vh;
-  width: 100%;
-  position: absolute;
   left: 0;
   top: 0;
   padding: 3rem 18rem;
 }
 
 .container {
-  display: none;
-  transform: translateY(-100%) scale(0);
-  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;
+  display: block;
+  width: 70%;
+  /* transform: translateY(-100%) scale(0); */
+  /* transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;*/
   background-color: var(--color-primary);
 }
 
@@ -819,7 +818,7 @@ section {
   animation: appear 1s ease-in-out;
   transform: translateY(0) scaleY(1);
 }
-
+*/
 .main-content {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;

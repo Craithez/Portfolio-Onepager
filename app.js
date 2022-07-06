@@ -8,7 +8,7 @@
         })
     });
 })();
-
+/*
 let lastScroll = 0;
 
 window.addEventListener('scroll', function() {
