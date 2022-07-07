@@ -56,11 +56,26 @@ h1::after {
 
 /* Controls - Rightside Bar - Colors - Shape // Icons from Fontawesome */
 
-.navbar {
+nav {
   position: fixed;
   z-index: 10;
   top: 50%;
-  right: 20%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+
+/* Navbar Icons */
+
+.iconbar {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,9 +84,7 @@ h1::after {
 
 }
 
-/* Navbar Icons */
-
-.navbar .control {
+.iconbar .control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-3);
@@ -85,20 +98,20 @@ h1::after {
   box-shadow: var(--box-shadow-1);
 }
 
-.navbar .control i {
+.iconbar .control i {
   font-size: 1.2rem;
   color: var(--color-grey-5);
   pointer-events: none;
 }
 
-.navbar .active-button {
+.iconbar .active-button {
   background-color: var(--color-secondary);
-  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;
 }
 
-.navbar .active-button i {
+.iconbar .active-button i {
   color: var(--color-white);
 }
+
 
 
 /* Header content */
@@ -554,7 +567,7 @@ h4 {
     width: 90%;
   }
 
-  .navbar {
+  .iconbar {
     top: auto;
     bottom: 0;
     flex-direction: row;
@@ -565,7 +578,7 @@ h4 {
     background-color: var(--color-grey-5);
   }
 
-  .navbar .control {
+  .iconbar .control {
     margin: 1rem 0.3rem;
   }
 
@@ -846,3 +859,5 @@ section {
   overflow-y: scroll;
   width: 80%;
 }
+
+
