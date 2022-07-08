@@ -54,6 +54,15 @@ h1::after {
     blink 900ms steps(var(--typewriterCharacters)) infinite;
 }
 
+/* Scrolling 
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+*/
 /* Controls - Rightside Bar - Colors - Shape // Icons from Fontawesome */
 
 nav {
@@ -111,8 +120,6 @@ nav {
 .iconbar .active-button i {
   color: var(--color-white);
 }
-
-
 
 /* Header content */
 .header-content {
