@@ -54,15 +54,6 @@ h1::after {
     blink 900ms steps(var(--typewriterCharacters)) infinite;
 }
 
-/* Scrolling 
-
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-*/
 /* Controls - Rightside Bar - Colors - Shape // Icons from Fontawesome */
 
 nav {
@@ -162,6 +153,7 @@ nav {
   object-fit: cover;
   transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;
   filter: grayscale(100%);
+  display: inline-block;
 }
 
 .header-content .left-header .image img:hover {
@@ -193,6 +185,7 @@ nav {
 h4 {
   margin-bottom: 2rem;
   text-align: center;
+
 }
 
 .about-container {
@@ -755,7 +748,15 @@ h4 {
   }
 
 }
+/* Scrolling 
 
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+*/
 /* Scrolling */
 
 html {
@@ -864,7 +865,7 @@ section {
 */ .main-content {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  width: 80%;
+  width: 75%;
 }
 
 

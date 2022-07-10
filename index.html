@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -22,7 +22,9 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/me.jpg" alt="">
+                    
+                    <img id="img" src="img/startpicture.JPG" onload = "changeImage()">
+                    <script src="imagechanger.js"></script>
                 </div>
             </div>
             <div class="right-header">
@@ -39,81 +41,81 @@
     </header>
     <main>
         <div wrapper>
-        <!-- Progress % are random as are the "Skills" -->
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>My <span>Skills</span></h2>
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title"></h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
+            <!-- Progress % are random as are the "Skills" -->
+            <section class="container about" id="about">
+                <div class="main-title">
+                    <h2>My <span>Skills</span></h2>
+                </div>
+                <div class="about-stats">
+                    <h4 class="stat-title"></h4>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">html5</p>
+                            <div class="progress-con">
+                                <p class="prog-text">80%</p>
+                                <div class="progress">
+                                    <span class="html"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="css"></span>
+                        <div class="progress-bar">
+                            <p class="prog-title">css</p>
+                            <div class="progress-con">
+                                <p class="prog-text">75%</p>
+                                <div class="progress">
+                                    <span class="css"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">60%</p>
-                            <div class="progress">
-                                <span class="js"></span>
+                        <div class="progress-bar">
+                            <p class="prog-title">javascript</p>
+                            <div class="progress-con">
+                                <p class="prog-text">60%</p>
+                                <div class="progress">
+                                    <span class="js"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">30%</p>
-                            <div class="progress">
-                                <span class="python"></span>
+                        <div class="progress-bar">
+                            <p class="prog-title">python</p>
+                            <div class="progress-con">
+                                <p class="prog-text">30%</p>
+                                <div class="progress">
+                                    <span class="python"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">reactJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">20%</p>
-                            <div class="progress">
-                                <span class="react"></span>
+                        <div class="progress-bar">
+                            <p class="prog-title">reactJS</p>
+                            <div class="progress-con">
+                                <p class="prog-text">20%</p>
+                                <div class="progress">
+                                    <span class="react"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">three.js</p>
-                        <div class="progress-con">
-                            <p class="prog-text">20%</p>
-                            <div class="progress">
-                                <span class="three"></span>
+                        <div class="progress-bar">
+                            <p class="prog-title">three.js</p>
+                            <div class="progress-con">
+                                <p class="prog-text">20%</p>
+                                <div class="progress">
+                                    <span class="three"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-            <h4>Information About me:</h4>
-            <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
-                vero eos vel nemo eius voluptatem dicta tenetur modi. La musica
-                delectus dolore fugiat exercitationem a,
-                ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Harum non necessitatibus deleniti eum soluta.
-            </p>
+                <h4>Information About me:</h4>
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
+                    vero eos vel nemo eius voluptatem dicta tenetur modi. La musica
+                    delectus dolore fugiat exercitationem a,
+                    ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Harum non necessitatibus deleniti eum soluta.
+                </p>
+        </div>
         </section>
 
 
@@ -213,13 +215,14 @@
         <nav>
             <div class="iconbar">
                 <ul>
-                    <li class="control active-button"><a href="#home"><i class="fas fa-home"></i></a></li>
+                    <li class="control"><a href="#home"><i class="fas fa-home"></i></a></li>
+                    <!---- "active-button" should be in the frist class="control"  -->
                     <li class="control"><a href="#about"><i class="fas fa-kitchen-set"></i></a></li>
                     <li class="control"><a href="#projects"><i class="fas fa-briefcase"></i></a></li>
                     <li class="control"><a href="#contact"><i class="fas fa-envelope-open"></i></a></li>
                 </ul>
             </div>
-            </nav>
+        </nav>
     </main>
     <script src="app.js"></script>
 
@@ -227,7 +230,7 @@
 
 </html>
 
-   <!-- /*nav>
+<!-- /*nav>
     <div class="iconbar">
         <ul>
           <li class="home active"><a href="#home" class="control active-button"><i class="fas fa-home"></i></a></li>
@@ -237,7 +240,7 @@
         </ul>
       </div>
     </nav>*/-->
-   <!--<div class="navbar">
+<!--<div class="navbar">
         <a href="#home" class="control active-button">
             <i class="fas fa-home"></i>
         </a>
