@@ -748,6 +748,7 @@ h4 {
   }
 
 }
+
 /* Scrolling 
 
 .wrapper {
@@ -862,10 +863,8 @@ section {
   transform: translateY(0) scaleY(1);
 }
 
-*/ .main-content {
+ .main-content {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   width: 75%;
 }
-
-

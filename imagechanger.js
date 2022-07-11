@@ -1,17 +1,25 @@
-function changeImage(){
-    var img = document.getElementById("profileimg");
-    img.src = images[x];
-    x++;
-    if(x >= images.length){
-        x = 0;
-    } 
-}   
-var timerid = setInterval(changeImage(), 4000);
-
 var images = [], x = 0;
-images[0] = "img/me1.jpg";
-images[1] = "img/me2.jpg";
+    images[0] = "img/me1.jpg";
+    images[1] = "img/me2.jpg";
 
+    (function() {
+        var picture = document.getElementById('img');  
+        var delayInSeconds = 45;                           
+        var images = ['img/me1.jpg','img/me2.jpg'];
+        
+    
+        var num = 0;
+        var changeImage = function() {
+            var len = images.length;
+            picture.src = images[num++];
+            if (num == len) {
+                num = 0;
+                delayInSeconds = 55;
+            }
+            
+        };
+        setInterval(changeImage, delayInSeconds * 90);
+        })();
 
 
 
