@@ -9,6 +9,7 @@ Constructive comments and help are appreciated.
 
 
 
+
 Things i want to implement:
 
 Navbar :heavy_check_mark:
@@ -24,4 +25,6 @@ Mobile compatibility :x:
 Show active section in navbar after clicking it or scrolling to it :x:
 
 More smooth transitions :x:
+
+Banners for known porgramming languages and completed projects :x:
 
