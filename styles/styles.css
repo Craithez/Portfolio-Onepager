@@ -852,7 +852,7 @@ section {
 
 .container {
   display: block;
-  width: 80%;
+  margin: 0 auto;
   /* transform: translateY(-100%) scale(0); */
   transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;
   background-color: var(--color-primary);
@@ -868,6 +868,5 @@ section {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   width: 75%;
-  margin-left: 0.1rem;
-  margin-right: 2rem;
+  margin: 0 auto;
 }
