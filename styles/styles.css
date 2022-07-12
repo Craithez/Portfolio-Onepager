@@ -94,7 +94,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.7rem 0;
+  margin: 0.5rem 0;
   box-shadow: var(--box-shadow-1);
 }
 
@@ -203,12 +203,12 @@ h4 {
 }
 
 .about-container .about-box {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .about-container .about-box p {
   line-height: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   color: var(--color-grey-1);
 }
 
@@ -296,6 +296,7 @@ h4 {
   font-size: 1.4rem;
   text-align: center;
   padding: 3.5rem 0;
+  padding-right: 0;
   position: relative;
 }
 
@@ -551,8 +552,8 @@ h4 {
 
   .right-header {
     grid-row: 1;
-    padding-right: 0rem;
-    width: 80%;
+    padding-right: 0rem !important;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -583,7 +584,7 @@ h4 {
   }
 
   .container {
-    padding: 2rem 2.5rem;
+    padding: 2rem 2rem;
   }
 
   .about-stats .progress-bars {
@@ -641,9 +642,9 @@ h4 {
 
 /* Media queries - should add later in scss */
 
-@media screen and (max-width: 1432px) {
+@media screen and (max-width: 1400px) {
   .container {
-    padding: 7rem 11rem;
+    padding: 2rem 2rem;
   }
 
   .contact-content-con {
@@ -679,7 +680,7 @@ h4 {
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1000px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -693,9 +694,9 @@ h4 {
   }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 950px) {
   .container {
-    padding: 7rem 6rem;
+    padding: 5rem 4rem;
   }
 
   .about-container .about-box {
@@ -713,14 +714,14 @@ h4 {
 
   .left-header .image {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 !important;
   }
 
   .right-header {
     grid-row: 1;
     padding-right: 0rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 !important;
   }
 
   .right-header .name {
@@ -732,7 +733,7 @@ h4 {
 
 @media screen and (max-width: 700px) {
   .container {
-    padding: 7rem 3rem;
+    padding: 4rem 2rem;
   }
 
   .about-stats .progress-bars {
@@ -846,14 +847,14 @@ section {
   min-height: 100vh;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 1rem;
 }
 
 .container {
   display: block;
   width: 80%;
   /* transform: translateY(-100%) scale(0); */
-  /* transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;*/
+  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;
   background-color: var(--color-primary);
 }
 
@@ -867,4 +868,6 @@ section {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   width: 75%;
+  margin-left: 0.1rem;
+  margin-right: 2rem;
 }
