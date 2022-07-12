@@ -26,5 +26,5 @@ Show active section in navbar after clicking it or scrolling to it :x:
 
 More smooth transitions :x:
 
-Banners for known porgramming languages and completed projects :x:
+Banners for known programming languages and completed projects :x:
 
