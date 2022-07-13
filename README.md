@@ -1,4 +1,4 @@
-Portfolio-onepager-JS-CSS
+## Portfolio-onepager-JS-CSS
 
 
 I am trying to make a portfolio onepager, without prior knowledge of css/javascript etc. 
@@ -10,21 +10,25 @@ Constructive comments and help are appreciated.
 
 
 
-Things i want to implement:
 
-Navbar :heavy_check_mark:
 
-Imagechanger :heavy_check_mark:
 
-Typewriting effect :heavy_check_mark:
 
-More "working" icons/buttons :x:
+**Things i want to implement:**
 
-Mobile compatibility :x:
+- *Navbar :heavy_check_mark:*
 
-Show active section in navbar after clicking it or scrolling to it :x:
+- *Imagechanger :heavy_check_mark:*
 
-More smooth transitions :x:
+- *Typewriting effect :heavy_check_mark:*
 
-Banners for known programming languages and completed projects :x:
+- More "working" icons/buttons :x:
+
+- Mobile compatibility :x:
+
+- Show active section in navbar after clicking it or scrolling to it :x:
+
+- More smooth transitions :x:
+
+- Banners for known programming languages and completed projects :x:
 
