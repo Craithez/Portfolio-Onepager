@@ -6,14 +6,11 @@ I am trying to make a portfolio onepager, without prior knowledge of css/javascr
 I learned most of the things from w3schools.com and freecodecamp.org.
 
 Constructive comments and help are appreciated.
-
-
-
-
-
-
-
-
+<br />
+<br />
+<br />
+<br />
+<br />
 **Things i want to implement:**
 
 - *Navbar :heavy_check_mark:*
